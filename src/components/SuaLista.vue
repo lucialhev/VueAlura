@@ -1,10 +1,11 @@
 <script lang="ts">
+import Tag from './Tag.vue';
+
     export default{
-        data(){
-            return{
-                ingredientes: [] 
-            }
-        }
+        props:{
+            ingredientes
+        },
+        components: { Tag }
     }
 </script>
 <template>
